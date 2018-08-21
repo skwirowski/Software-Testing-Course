@@ -30,18 +30,39 @@ const reverseArray = () => document.getElementById("paragraph-two").innerHTML = 
 const restoreeArray = () => document.getElementById("paragraph-two").innerHTML = restorendStringOfNumbers;
 
 // Calculator functionality
+const showAdditionResult = () => {
+  let firstNumberInputValue = document.getElementById("first-number-input").value;
+  let secondNumberInputValue = document.getElementById("second-number-input").value;
 
+  const addNumbers = (a, b) => {
+    let firstNumber = Number(a);
+    let secondNumber = Number(b);
 
+    return firstNumber + secondNumber;
+  };
+
+  const additionResult = addNumbers(firstNumberInputValue, secondNumberInputValue);
+
+  return document.getElementById("result").value = additionResult;
+};
+
+// Attach event listeners
 const attachEventListeners = () => {
   const changedParagraphContentButton = document.getElementById("change-content-button");
   const restoreParagraphContentButton = document.getElementById("restore-content-button");
+
   const reversedArrayButton = document.getElementById("reverse-array-button");
   const restoredArrayButton = document.getElementById("restore-array-button");
 
+  const addNumbersButton = document.getElementById("addition-button");
+
   changedParagraphContentButton.addEventListener("click", changeContent);
   restoreParagraphContentButton.addEventListener("click", restoreContent);
+
   reversedArrayButton.addEventListener("click", reverseArray);
   restoredArrayButton.addEventListener("click", restoreeArray);
+
+  addNumbersButton.addEventListener("click", showAdditionResult);
 };
 
 attachEventListeners();
