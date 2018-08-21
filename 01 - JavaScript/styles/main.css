@@ -1,0 +1,66 @@
+body {
+  font-family: Arial, 'sans-serif';
+}
+
+div {
+  height: 150px;
+  background: lightgray;
+  margin: 0 0 15px 0;
+}
+
+p {
+  margin: 0;
+  padding: 15px 15px 50px 15px;
+}
+
+button {
+  cursor: pointer;
+  color: #ffffff;
+  background-color: #28a745;
+  border: 1px solid #28a745;
+  display: inline-block;
+  font-weight: bold;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  user-select: none;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  border-radius: 0.25rem;
+  transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+  transition-property: color, background-color, border-color, box-shadow;
+  transition-duration: 0.15s, 0.15s, 0.15s, 0.15s;
+  transition-timing-function: ease-in-out, ease-in-out, ease-in-out, ease-in-out;
+  transition-delay: 0s, 0s, 0s, 0s;
+  text-transform: none;
+  box-sizing: border-box;
+  margin: 0 0 0 15px;
+}
+
+button:hover {
+  cursor: pointer;
+  color: #ffffff;
+  background-color: #218838;
+  border-color: #218838;
+}
+
+#container-three {
+  height: 240px;
+}
+
+form {
+  margin: 0;
+  padding: 15px;
+
+}
+
+label {
+  width: 300px;
+  display: block;
+}
+
+input {
+  display: block;
+  margin: 5px 0;
+}
