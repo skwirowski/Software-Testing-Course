@@ -1,0 +1,36 @@
+#div-one {
+  width: 200px;
+  height: 200px;
+  background: lightgreen;
+}
+
+button {
+  display: block;
+}
+
+#div-three-1,
+#div-three-2,
+#div-three-3 {
+  width: 150px;
+  height: 150px;
+  background: lightpink;
+  display: inline-block;
+}
+
+label {
+  display: block;
+}
+
+input {
+  display: block;
+  margin: 5px 0;
+}
+
+#div-four-button-1,
+#div-four-button-2,
+#div-four-button-3,
+#div-five-button-1,
+#div-five-button-2 {
+  margin: 20px 10px 10px 0;
+  display: inline-block;
+}
